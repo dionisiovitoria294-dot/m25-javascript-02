@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro HTML</HTml></title>
+    <style>
+        nav{
+            background-color: aqua;
+        }
+        /* Selecionando a tag com id= videos e dentro a tag video */
+        #videos video{
+            width: 300px;
+        }
+        /* selecionando por classe*/
+        .cor-vermelha{
+            color:red
+        }
+    </style>
+    <title>Meu primeiro HTML
+
+</HTml>
+</title>
 </head>
+
 <body>
     <nav id="topo">
         <a href="#formatacao">Formatação</a> | <a href="#listas">Listas</a>
@@ -17,8 +35,10 @@
 
         <h1>Titulo1</h1>
         <p>
-    
-            Lorem, &nbsp;ipsum dolor sit, amet consectetur adipisicing elit. Officia, iste pariatur quo aspernatur quibusdam minima perferendis facere eveniet. Dolor architecto repudiandae eius impedit dolorum. Hic corrupti magni reprehenderit ipsa eveniet?
+
+            Lorem, &nbsp;ipsum dolor sit, amet consectetur adipisicing elit. Officia, iste pariatur quo aspernatur
+            quibusdam minima perferendis facere eveniet. Dolor architecto repudiandae eius impedit dolorum. Hic corrupti
+            magni reprehenderit ipsa eveniet?
         </p>
         <p>Segundo Parágrafo.
         </p>
@@ -32,12 +52,14 @@
         <p><mark>Texto Marcado.</mark></p>
     </section>
     <section id="listas">
-        <header><h2>Listas Ordenadas e Não Ordenadas</h2></header>
+        <header>
+            <h2>Listas Ordenadas e Não Ordenadas</h2>
+        </header>
         <section id="Listas-Ordenadas">
             <header>Listas Ordenadas</header>
             <!-- Type 1 - numeros de 1 a n -->
             <!-- Type A - letras de A a B -->
-             <!-- Type I - Algarismos Romanos -->
+            <!-- Type I - Algarismos Romanos -->
             <ol type="I">
                 <li>Primeiro Item</li>
                 <li>Segundo Item</li>
@@ -49,7 +71,9 @@
             </ol>
         </section>
         <section id="lista-nao-ordenada">
-            <header><h4>listas não ordenadas</h4></header>
+            <header>
+                <h4>listas não ordenadas</h4>
+            </header>
             <ul>
                 <li> Primeiro item</li>
                 <li> Segundo item</li>
@@ -65,37 +89,47 @@
         </section>
     </section>
     <section id="midias">
-        <header><h4>Imagens</h4></header>
+        <header>
+            <h4 class="cor-vermelha">Imagens</h4>
+        </header>
         <figure>
-            <img src="https://sp.senai.br/images/senai.svg" 
-            alt="Logotipo do Senai">
+            <img src="https://sp.senai.br/images/senai.svg" alt="Logotipo do Senai">
             <figcaption>Imagem do Senai - Fonte : Site do Senai</figcaption>
-        </figure><section id="videos">
-            <header><h4>Videos</h4></header>
+        </figure>
+        <section id="videos">
+            <header>
+                <h4>Videos</h4>
+            </header>
             <video controls>
-                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
+                <source
+                    src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
             </video>
 
         </section>
         <section id="audios">
-            <header><h4>Audios</h4></header>
+            <header>
+                <h4>Audios</h4>
+            </header>
             <audio controls>
-                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3" >
+                <source
+                    src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3">
             </audio>
         </section>
     </section>
     <section id="tabelas">
-        <header><h4>Tabelas</h4></header>
+        <header>
+            <h4>Tabelas</h4>
+        </header>
         <table border="1">
             <thead>
                 <tr> <!-- Inicio de uma linha-->>
                     <th>Sequencia de uma linha</th>
                     <th>Descrição</th>
                     <th>Valor</th>
-                    
+
                 </tr>
             </thead>
-            <tbody>  <!--- corpo da tabela -->
+            <tbody> <!--- corpo da tabela -->
                 <tr>
                     <td>1</td>
                     <td>lapiseira</td>
@@ -117,16 +151,51 @@
         </table>
     </section>
     <section id="formularios">
-        <header><h4>Formularios</h4></header>
+        <header>
+            <h4>Formularios</h4>
+        </header>
         <form action="#" method="post">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
 
-        <label for="telefone">Telefone</label>
-        <input type="tel" name="telefone" id="telefone" >
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
 
-        <input type="submit" value="enviar">
+            <input type="submit" value="enviar">
         </form>
     </section>
+    <section id="iframes">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qEDnZzzks7Q?si=hFsQRhBdS-4DhW3j"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="desenho">
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" fill="red" />
+        </svg>
+        <section id="outras-tags">
+            <progress value="70" max="100"></progress>
+            <meter value="0.6">60%</meter>
+            <time datetime="2025-09-20">20 de Setembro de 2025</time>
+            <!-- usada para mostrar um coódigo em uma programação-->
+            <code>console.log("Olá");</code>
+            <!-- Usado para mostrar um texto da forma que estiver escrito com quebras de linhas, espaços, tabulações-->
+            <pre>
+for i in range(5):
+ print(i)
+</pre>
+        </section>
+    </section>
+    <aside>
+        <h3>conteudo a parte</h3>
+    </aside>
+    <footer> 
+        Linkndin:<a href="link para o linkedin">texto</a>
+         Facebook:<a href="link para o facebook">texto</a> 
+          WhatsApp : 111111 </footer>
+    <!-- Javascript sempre ficara no final do documento -->>
+    <script>alert("Olá!");</script>
 </body>
+
 </html>
