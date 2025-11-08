@@ -1,16 +1,52 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "descricao": "produto",
-      "saldo": "10",
-      "preco": "5"
+      "id": "1",
+      "descricao": "teste",
+      "saldo": 10,
+      "preco": 5
     },
     {
-      "id": 2,
-      "descricao": "",
-      "saldo": "",
-      "preco": ""
+      "id": "2",
+      "descricao": "Produto2",
+      "saldo": 50,
+      "preco": 153.5
+    },
+    {
+      "id": "3",
+      "descricao": "Produto2",
+      "saldo": 50,
+      "preco": 153.5
+    },
+    {
+      "id": "4",
+      "descricao": "item novo",
+      "saldo": 50,
+      "preco": 150
+    },
+    {
+      "id": "5",
+      "descricao": "item novo",
+      "saldo": 50,
+      "preco": 150
+    },
+    {
+      "id": "6",
+      "descricao": "item novo",
+      "saldo": 50,
+      "preco": 150
+    },
+    {
+      "id": "7",
+      "descricao": "item novo",
+      "saldo": 50,
+      "preco": 150
+    },
+    {
+      "id": "8",
+      "descricao": "teste",
+      "saldo": 5,
+      "preco": 5
     }
   ]
 }
