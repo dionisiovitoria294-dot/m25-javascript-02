@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Importância da Inteligência Artificial na Educação</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>A Importância da Inteligência Artificial na Educação</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#desafios">Desafios</a></li>
+                <li><a href="#futuro">Futuro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>Introdução à IA na Educação</h2>
+            <p>A Inteligência Artificial está revolucionando a maneira como aprendemos e ensinamos.</p>
+            <p>Com ferramentas avançadas, a IA personaliza o aprendizado e torna a educação mais acessível.</p>
+            <img src="https://via.placeholder.com/600x300" alt="IA na educação">
+        </section>
+
+        <section id="beneficios">
+            <h2>Benefícios da IA</h2>
+            <p>A personalização do aprendizado é um dos maiores benefícios da IA.</p>
+            <p>Alunos podem aprender no seu próprio ritmo, com conteúdo adaptado às suas necessidades.</p>
+            <img src="https://via.placeholder.com/600x300" alt="Benefícios da IA">
+        </section>
+
+        <section id="desafios">
+            <h2>Desafios e Considerações</h2>
+            <p>A implementação da IA na educação traz desafios importantes.</p>
+            <p>Questões como privacidade de dados e equidade de acesso precisam ser consideradas.</p>
+            <img src="https://via.placeholder.com/600x300" alt="Desafios da IA">
+        </section>
+    </main>
+
+    <aside>
+        <h3>Tópicos Extras</h3>
+        <ul>
+            <li>Ferramentas de IA para educação</li>
+            <li>Casos de sucesso</li>
+            <li>Recursos para professores</li>
+            <li>Tendências futuras</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Contato: email@exemplo.com | (11) 99999-9999</p>
+        <p>&copy; 2024 Artigo sobre IA na Educação. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
