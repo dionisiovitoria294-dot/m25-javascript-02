@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Iniciante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f3ff;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Iniciante</h1>
+        
+        <form id="meuFormulario">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="0" max="120" required>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <div class="info">
+            <p>Preencha o formulário e clique em "Enviar" para ver a mensagem personalizada e os dados no console.</p>
+        </div>
+    </div>
+
+    <script>
+        // Captura o formulário pelo ID
+        const formulario = document.getElementById('meuFormulario');
+        
+        // Adiciona um "ouvinte" de evento para quando o formulário for enviado
+        formulario.addEventListener('submit', function(evento) {
+            // Impede o comportamento padrão do formulário (recarregar a página)
+            evento.preventDefault();
+            
+            // Obtém os valores dos campos
+            const nome = document.getElementById('nome').value;
+            const idade = document.getElementById('idade').value;
+            
+            // Cria a mensagem personalizada
+            const mensagem = `Olá, ${nome}! Você tem ${idade} anos.`;
+            
+            // Exibe a mensagem em um alerta
+            alert(mensagem);
+            
+            // Envia os dados para o console
+            console.log('Dados do formulário:');
+            console.log('Nome:', nome);
+            console.log('Idade:', idade);
+            
+            // Limpa os campos do formulário após o envio
+            formulario.reset();
+        });
+    </script>
+</body>
+</html>
