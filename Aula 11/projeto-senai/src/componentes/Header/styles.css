@@ -1,7 +1,8 @@
-.cabecalho{
+.cabecalho {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--cor-fundo-header);
     color: var(--cor-fonte-header);
     font-size: 40px;
@@ -9,5 +10,36 @@
 }
 .cabecalho img {
     height: 1em;
-  
+}
+.pnl-direita, .pnl-esquerda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon-hamburger {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-color: var(--cor-fonte-header);
+    -webkit-mask: url('./assets/menu.svg') no-repeat center / contain;
+    mask: url('./assets/menu.svg') no-repeat cebter / contain;
+    margin: 5px;
+}
+.icon-login {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-color: var(--cor-fonte-header);
+    -webkit-mask: url('./assets/login.svg') no-repeat center / contain;
+    mask: url('./assets/login.svg') no-repeat cebter / contain;
+    margin: 5px;
+}
+.icon-search {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-color: var(--cor-fonte-header);
+    -webkit-mask: url('./assets/search.svg') no-repeat center / contain;
+    mask: url('./assets/search.svg') no-repeat cebter / contain;
+    margin: 5px;
 }

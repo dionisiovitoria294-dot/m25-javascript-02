@@ -1,5 +1,21 @@
-.fundo{
-  background:url('./assets/logo-senai.png') no-repeat center;
-  opacity:0.5;
-  height: 60vh;
+.contentor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.fundo {
+  position: relative;
+  flex: 1;
+  padding: 10px;
+  overflow: hidden;
+}
+.fundo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./assets/logo-senai.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
 }
